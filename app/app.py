@@ -119,8 +119,8 @@ def setup_and_run_threads():
 
 
 schedule.every(15).minutes.do(setup_and_run_threads)
-# while True:
-#     schedule.run_pending()
-#     time.sleep(1)
+while True:
+    schedule.run_pending()
+    time.sleep(1)
 
-run_test(0.25, False)
+
