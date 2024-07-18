@@ -11,7 +11,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 mongodb_uri = os.getenv('MONGODB_URI')
-client = MongoClient(mongodb_uri)
+client = MongoClient(mongodb_uri, port=27017)
 
 database = "icsms-user-activity-scores"
 anomalies_database = "icsms-user-activity-anomalies"
