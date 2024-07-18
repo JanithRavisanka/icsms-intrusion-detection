@@ -31,7 +31,7 @@ jobs:
         with:
           context: .
           push: true
-          tags: ${{ secrets.DOCKER_USERNAME }}/icsms-auth:latest
+          tags: ${{ secrets.DOCKER_USERNAME }}/icsms-IDS:latest
           platforms: linux/arm64
 
       - name: Logout from Docker Hub
